@@ -39,3 +39,7 @@ Steps to set up a totem device:
 The above is the minimal setup: this can then be expanded with multiple "totem" machines. Repo connections: both lab03 and the first totem machine have ssh keys for heseltime github saved so can do a git push as well. Further totems should only need to pull (no ssh setup required). 
 
 The final setup steps are to connect speakers to the totems. (Last Check: one totem/multiple speakers vs one totem/one speaker setup approach. `<-- TODO`)
+
+## Setup Tests
+
+`/usr/bin/jackd -dalsa -dhw:Headphones -r44100 -p512 -n4 -P -o2`
