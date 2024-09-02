@@ -9,6 +9,7 @@ Steps to set up a totem device:
 
 ### Network Diagram
 
+```
      +-------------------+                         +-------------------+
      |    Raspberry Pi   |                         |    Raspberry Pi   |
      |  "totem" (machine)|                         | "raspberrypi"     |
@@ -26,5 +27,7 @@ Steps to set up a totem device:
    | Code Repo: it-u-     |                     | Code Repo: it-u-       |
    | intertotem-totembase |                     | intertotem             |
    +----------------------+                     +------------------------+
+
+```
 
 The above is the minimal setup: this can then be expanded with multiple "totem" machines.
