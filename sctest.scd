@@ -3,7 +3,7 @@ s.boot
 // abs path needed
 (
 ~cwd = thisProcess.nowExecutingPath.dirname;
-~seismo_relpath = "input/earthquake_2024-09-01T15_32_06.711000Z_IU_ANMO_9908km.wav";
+~seismo_relpath = "input/earthquake_2024-09-01T15_46_33.512000Z_IU_ANMO_5904km.wav";
 ~seismo_path = ~cwd +/+ ~seismo_relpath;
 )
 
@@ -29,6 +29,8 @@ SynthDef.new(\seismoPlayer, {
 }).add;
 )
 
-b = Synth.new(\seismoPlayer, [\speed, 0.5]);
-b.set(\speed, 0.05);
+b = Synth.new(\seismoPlayer, [\speed, 0.01]);
+b.set(\speed, 0.5);
 b.free;
+
+Server.default.options.devices.postln;
