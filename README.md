@@ -1,4 +1,4 @@
-## Client Setup (intertotem/totembase)
+## 🪆 Client Setup (intertotem/totembase) 🪆
 
 Steps to set up a totem device:
 
