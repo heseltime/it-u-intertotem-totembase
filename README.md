@@ -2,21 +2,25 @@
 
 Steps to set up a totem device:
 
-* totem@totem user@machine setup is standard
-* install SuperCollider
-* for runtime, in a terminal: `git pull https://github.com/heseltime/it-u-intertotem-totembase` into a intertotem directory on desktop
-* cd into the totembase directory and `python3 main.py` (and SuperCollider setup)
+1. **User and Machine Setup**:
+   - `totem@totem` user and machine setup is standard.
 
-### Network Diagram
+2. **Install SuperCollider**:
+   - Install [SuperCollider](https://supercollider.github.io/download) on each "totem" device.
 
+3. for **runtime**, in a terminal: `git pull https://github.com/heseltime/it-u-intertotem-totembase` into a intertotem directory on desktop
+     - cd into the totembase directory and `python3 main.py` (and SuperCollider setup)
+  
+   
 ```
+
      +-------------------+                         +-------------------+
      |    Raspberry Pi   |                         |    Raspberry Pi   |
      |  "totem" (machine)|                         | "raspberrypi"     |
      |      Debian       |                         |     (machine)     |
      +-------------------+                         |      Debian       |
      |  User: totem      |                         +-------------------+
-     | Repo: it-u-       |  SSH for file transfer  |  User: lab03      |
+     | Repo: it-u-       |  🔄  SSH for file transfer  |  User: lab03      |
      | intertotem-       +<----------------------->| Repo: it-u-       |
      | totembase         |                         | intertotem        |
      +--------+----------+                         +--------+----------+
@@ -24,9 +28,10 @@ Steps to set up a totem device:
               |                                             |
               |                                             |  
    +----------+-----------+                     +-----------+------------+
-   | Code Repo: it-u-     |                     | Code Repo: it-u-       |
-   | intertotem-totembase |                     | intertotem             |
-   +----------------------+                     +------------------------+
+   |  📂  Code Repo: it-u- |                     | 📂 Code Repo: it-u-     |
+   | intertotem-totembase  |                     | intertotem             |
+   +-----------------------+                     +------------------------+
+        🗝️ GitHub Access: Pull                           🗝️ GitHub Access: Push/Pull
 
 ```
 
