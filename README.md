@@ -48,4 +48,4 @@ The final setup steps are to connect speakers to the totems. (Last Check: one to
 
 > [!TIP]
 > For this reason **this repo is best put in a Desktop directory intertotem** (if you want to follow along).
-> So, in a nutshell, for setu,p required dependency for totembase (this project): SuperCollider installation (so setup is literally install that software on to a debian formatted pi sd-card (typically, using pi-imager or similar), install SuperCollider, clone into this repo in a Desktop folder `intertotem`.
+> So, in a nutshell, for setup required dependency for totembase (this project): SuperCollider installation (so setup is literally install that software on to a debian formatted pi sd-card (typically, using pi-imager or similar), install SuperCollider, clone into this repo in a Desktop folder `intertotem`.
