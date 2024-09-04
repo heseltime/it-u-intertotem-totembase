@@ -40,6 +40,11 @@ The above is the minimal setup: this can then be expanded with multiple "totem" 
 
 The final setup steps are to connect speakers to the totems. (Last Check: one totem/multiple speakers vs one totem/one speaker setup approach. `<-- TODO`)
 
-## Setup Tests
+## Setup on Local Pi
 
-`/usr/bin/jackd -dalsa -dhw:Headphones -r44100 -p512 -n4 -P -o2`
+* cronjob
+* to run /home/totem/Desktop/intertotem/it-u-intertotem-totembase/autostart.bash on reboot
+* accesses startup.scd in same directory
+
+* for this reason **this repo is best put in a Desktop directory intertotem** (if you want to follow along)
+   * required dependency for totembase (this project): SuperCollider installation (so setup is literally install that software on to a debian formatted pi sd-card (typically, using pi-imager or similar), install SuperCollider, clone into this repo in a Desktop folder `intertotem`.
