@@ -40,7 +40,7 @@ The above is the minimal setup: this can then be expanded with multiple "totem" 
 
 The final setup steps are to connect speakers to the totems. (Last Check: one totem/multiple speakers vs one totem/one speaker setup approach. `<-- TODO`)
 
-## Setup on Local Pi
+## :strawberry: Setup on Local Pi :strawberry:
 
 * cronjob
 * to run /home/totem/Desktop/intertotem/it-u-intertotem-totembase/autostart.bash on reboot
