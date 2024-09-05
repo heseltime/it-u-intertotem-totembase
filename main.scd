@@ -32,9 +32,8 @@ SynthDef(\playBuffer, {
 }).add;
 )
 
-
-(
 // Set up OSC responder to react to the '/file/copied' message
+(
 ~osc_handler = OSCFunc({
 	arg msg, time, addr, port;
 
@@ -63,7 +62,7 @@ SynthDef(\playBuffer, {
 // 1. AUDIO-MANIPULATIONS <--- EDIT HERE FOR LIVE CODING: OPTIONAL
 //
 ~player = Synth(\playBuffer, [\bufnum, ~in_buffer]);
-~player.set(\speed, 0.1);
+~player.set(\speed,0.007);
 
 
 //

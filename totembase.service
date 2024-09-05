@@ -1,0 +1,14 @@
+[Unit]
+Description=Intertotem Totem
+After=rsyslog.service udev.service
+
+[Service]
+ExecStart=/home/totem/Desktop/intertotem/it-u-intertotem-totembase/startup.scd
+Type=simple
+User=totem
+WorkingDirectory=/home/totem
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
